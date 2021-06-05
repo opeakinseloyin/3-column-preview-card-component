@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  overflow: hidden;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 25px;
+}
+.column h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.row {
+  height: 70%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.column {
+  height: 100%;
+  width: 33.3%;
+  padding: 51px;
+  display: flexbox;
+}
+
+.column button {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  padding: 15px 35px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  font-weight: 700;
+  margin-top: 75px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.column button:active,
+.column button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: hsl(0, 0%, 95%);
+}
+
+.Sedans button {
+  color: hsl(31, 77%, 52%);
+}
+
+.SUVs button {
+  color: hsl(184, 100%, 22%);
+}
+
+.Luxury button {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.Sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.SUVs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.Luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 1050px) {
+  body {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .column h1 {
+    font-size: 30px;
+  }
+
+  .column {
+    padding: 30px;
+  }
+
+  .column button {
+    font-size: 13px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow: visible;
+  }
+  .row {
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+  }
+  .column h1 {
+    color: hsl(0, 0%, 95%);
+    padding: 10px 0px;
+  }
+  .column {
+    height: auto;
+    width: 100%;
+  }
+
+  .column button {
+    font-size: 15px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    margin-top: 20px;
+  }
+}
